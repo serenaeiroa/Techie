@@ -12,17 +12,17 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Merriweather",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --default-font: "Libre Bodoni"i, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Raleway",  sans-serif;
   --nav-font: "Roboto",  sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #e7a1d4; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #c36274; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #f94691; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --background-color: #06156a; /* Background color for the entire website, including individual sections */
+  --default-color: #ffffff; /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #ffffff; /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #76b1c3; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -53,11 +53,11 @@
 }
 
 .accent-background {
-  --background-color: #5846f9;
+  --background-color: #1d183d;
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --accent-color: #ffffff;
-  --surface-color: #7c25ba;
+  --surface-color: #315bad;
   --contrast-color: #ffffff;
 }
 
@@ -218,7 +218,7 @@ h6 {
 /* Global Header on Scroll
 ------------------------------*/
 .scrolled .header {
-  --background-color: rgba(77, 44, 169, 0.9);
+  --background-color: rgba(93, 46, 219, 0.9);
 }
 
 /*--------------------------------------------------------------
@@ -791,15 +791,15 @@ section,
 
 .hero h1 {
   margin: 0;
-  font-size: 48px;
+  font-size: 100px;
   font-weight: 700;
-  line-height: 56px;
+  line-height: 100px;
 }
 
 .hero p {
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
-  margin: 5px 0 30px 0;
-  font-size: 20px;
+  color: color-mix(in srgb, var(--default-color), transparent 0%);
+  margin:5px 0 30px 0;
+  font-size: 100px;
   font-weight: 400;
 }
 
@@ -881,7 +881,7 @@ section,
 # About Section
 --------------------------------------------------------------*/
 .about .content h3 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 700;
 }
 
@@ -1845,4 +1845,12 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+  
+  .img-about {
+  display: block;
+  margin-left: 0; /* la empuja a la derecha */
+  margin-right: 200;
+  max-width: 600px;
+  width: 100%;
 }
+
