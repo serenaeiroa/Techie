@@ -13,6 +13,15 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  
+  
+  
+  
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -48,6 +57,31 @@
   ======================================================== -->
 </head>
 
+  <style>
+  #hero {
+    background-image: url('assets/img/fondo-hero.jpg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+  }
+
+
+  #hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 10, 40, 0.7);
+    z-index: -1;
+  }
+</style>
+
+
+
+  
 <body class="index-page">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
@@ -62,9 +96,9 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero" class="active">Inicio</a></li>
-          <li><a href="#about">Nosotros</a></li>
-          <li><a href="#services">Servicios</a></li>
-          <li><a href="#portfolio">Productos</a></li>
+          <li><a href="#about">Características</a></li>
+          <li><a href="#services">Despiece</a></li>
+          <li><a href="#portfolio">Tecnología</a></li>
           <li><a href="#team">Equipo</a></li>
        
           <li><a href="#contact">Contacto</a></li>
@@ -85,15 +119,14 @@
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-            <h1>Amoladora angular</h1>
-            <p>No es de lujo como marcas exclusivas de diseño, pero sí es una primera marca en sus rubros</p>
+            <h1>AMOLADORA  </h1>
+           <p>angular</p>
             <div class="d-flex">
-              <a href="https://www.ar.tiendaboschonline.com/herramientas-con-cable/amoladoras" class="btn-get-started">¡Mirá lo que hay
-                para vos!</a>
+            
             </div>
           </div>
           <div class="col-lg-6 order-1 order-lg-2 hero-img">
-            <img src="assets/img/boschh.png" class="img-fluid animated" alt="">
+            <img src="assets/img/boschh.png" class="img-fluid animated" alt=""  alt="" style="width: 200%; max-width: 1000px;" alt="Amoladora Bosch">
           </div>
         </div>
       </div>
@@ -101,16 +134,104 @@
     </section><!-- /Hero Section -->
 
     
+    
+
+    <!-- About Section -->
+ 
+     <style>
+  #about {
+    background-image: url('assets/img/fondo-hero.jpg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+  }
+
+
+  #about::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 10, 40, 0.7);
+    z-index: -1;
+  }
+</style>
+
+    
+    
+    <section id="about" class="about section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/tresimagenes.png" class="img-fluid" alt="" alt="" style="width:200%; max-width:800px"alt="Amoladora Bosch" style="display: block; margin-left: auto; margin-right: 0;" alt="imagen derecha">
+
+          </div>
+
+          <div class="col-lg-6 order-2 order-lg-1 content" data-aos="fade-up" data-aos-delay="200">
+            <h3>Control total</h3>
+            <p class="fst-italic"> en un solo giro  </p> 
+
+            
+            
+             <h3>Comodidad</h3>
+            <p class="fst-italic"> en cada maniobra  </p>
+            
+            
+            
+            
+             <h3>Cambio de disco</h3>
+            <p class="fst-italic"> sin herramientas extras  </p>
+            
+            
+         
+
+        </div>
+
+      </div>
+
+    
+    
+    
+    
     </section><!-- /Stats Section -->
 
+    
+     <style>
+  #services {
+    background-image: url('assets/img/fondo-hero.jpg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+  }
+
+
+  #services::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 10, 40, 0.7);
+    z-index: -1;
+  }
+</style>
+
+    
     <!-- Services Section -->
     <section id="services" class="services section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Servicios</h2>
-        <p>Lo que vos necesitás,
-        lo encontrás en Bosch.</p>
+        <h2>Diferente a las demás</h2>
+       
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -121,8 +242,10 @@
             <div class="service-item d-flex">
               <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
               <div>
-                <h4 class="title"><a href="#" class="stretched-link">Trabajadores</a></h4>
-                <p class="description">Somos 1500 formando parte de Bosch.</p>
+                <h4 class="title"><a href="#" class="stretched-link">Rendimiento</a></h4>
+                <p class="description">Ofrece un 
+rendimiento constante incluso en
+ los trabajos más exigentes. .</p>
               </div>
             </div>
           </div>
@@ -132,8 +255,9 @@
             <div class="service-item d-flex">
               <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
               <div>
-                <h4 class="title"><a href="#" class="stretched-link">¿Quiénes somos?</a></h4>
-                <p class="description">Fundados en 1886, nacimos en Alemania. </p>
+                <h4 class="title"><a href="#" class="stretched-link">Comodidad</a></h4>
+                <p class="description">Ofrece un agarre firme y 
+cómodo, incluso durante largas jornadas.. </p>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -142,45 +266,21 @@
             <div class="service-item d-flex">
               <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
               <div>
-                <h4 class="title"><a href="#" class="stretched-link">Ventas</a></h4>
-                <p class="description">Vendemos aproximadamente 1.000.000 de productos al año.</p>
+                <h4 class="title"><a href="#" class="stretched-link">Vida útil</a></h4>
+                <p class="description">Apaga automáticamente la herramienta 
+cuando necesita mantenimiento, protegiendo
+ el motor y prolongando su vida útil. </p>
               </div>
             </div>
           </div><!-- End Service Item -->
 
-          <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item d-flex">
-              <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
-              <div>
-                <h4 class="title"><a href="#" class="stretched-link">Sucursales</a></h4>
-                <p class="description">Tenemos 50 sucursales en Argentina. </p>
-              </div>
-            </div>
+        
           </div><!-- End Service Item -->
 
-          <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-item d-flex">
-              <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div>
-              <div>
-                <h4 class="title"><a href="#" class="stretched-link">Productos</a></h4>
-                <p class="description">Amoladoras, palas, martillos y muchas herramientas más.</p>
-              </div>
-            </div>
+              
           </div><!-- End Service Item -->
 
-          <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-item d-flex">
-              <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week"></i></div>
-              <div>
-                <h4 class="title"><a href="#" class="stretched-link">¿Dónde nos encontrás?</a></h4>
-                <p class="description">De lunes a viernes de las 14.30 a 18.00 hs.</p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-        </div>
-
-      </div>
+       
 
     </section><!-- /Services Section -->
     
@@ -283,8 +383,32 @@
 
 
     <!-- Features Section -->
+      
+ 
+
     <section id="features" class="features section">
 
+      <style>
+  #features {
+    background-image: url('assets/img/fondo-hero.jpg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+  }
+
+
+  #features::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 10, 40, 0.7);
+    z-index: -1;
+  }
+</style>
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Nosotros</h2>
@@ -340,6 +464,31 @@
     <section id="testimonials" class="testimonials section light-background">
 
       <!-- Section Title -->
+      
+      <style>
+  #testimonials {
+    background-image: url('assets/img/fondo-hero.jpg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+  }
+
+
+  #testimonials::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 10, 40, 0.7);
+    z-index: -1;
+  }
+</style>
+
+      
+      
       <div class="container section-title" data-aos="fade-up">
         <h2>Testimonios</h2>
         <p>Conocé la experiencia de nuestros clientes.</p>
