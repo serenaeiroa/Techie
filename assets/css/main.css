@@ -1850,7 +1850,7 @@ section,
   display: block;
   margin-left: 0; /* la empuja a la derecha */
   margin-right: 200;
-  max-width: 600px;
-  width: 100%;
+  max-width: 5000px;
+  width: 5000%;
 }
 
