@@ -81,17 +81,53 @@ a {
   transition: 0.3s;
 }
 
+.btn-light {
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  font-size: 18px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-light:hover {
+  background-color: #ddd;
+  color: #000;
+}
+
+
 a:hover {
   color: color-mix(in srgb, var(--accent-color), transparent 25%);
   text-decoration: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
+h1 {
+  font-size: 52px;
+  font-family: 'Raleway', serif;
+}
+
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 45px;
+}
+
+h4 {
+  font-size: 40px;
+}
+
+h5 {
+  font-size: 30px;
+}
+
 h6 {
+  font-size: 30px;
+}
+
   color: var(--heading-color);
   font-family: var(--heading-font);
 }
@@ -778,30 +814,35 @@ section,
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-.hero {
-  width: 100%;
-  min-height: 100vh;
-  position: relative;
-  padding: 120px 0 60px 0;
+.hero .container {
   display: flex;
   align-items: center;
-  background: linear-gradient(45deg, var(--background-color) 0%, color-mix(in srgb, var(--surface-color), transparent 10%) 100%), url("../img/hero-bg.jpg") center center no-repeat;
-  background-size: cover;
+  justify-content: center;
+  text-align: left;
+  padding-top: 100px;
 }
 
 .hero h1 {
-  margin: 0;
-  font-size: 100px;
-  font-weight: 700;
-  line-height: 100px;
+  font-size: 130px;
+  font-weight: 800;
+  color: white;
+  text-transform: uppercase;
+}
+
+.hero h3 {
+  font-size: 34px;
+  font-weight: 300;
+  color: #ccc;
+  margin-bottom: 20px;
 }
 
 .hero p {
-  color: color-mix(in srgb, var(--default-color), transparent 0%);
-  margin:5px 0 30px 0;
-  font-size: 100px;
-  font-weight: 400;
+  font-size: 90px;
+  font-style: italic;
+  color: #fff;
+  margin-top: -30px;
 }
+
 
 .hero .btn-get-started {
   color: var(--contrast-color);
@@ -848,6 +889,13 @@ section,
 .hero .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
+.hero-img img {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
 
 @media (max-width: 640px) {
   .hero h1 {
@@ -883,6 +931,7 @@ section,
 .about .content h3 {
   font-size: 3rem;
   font-weight: 700;
+   margin-top: 50px; 
 }
 
 .about .content ul {
@@ -934,7 +983,14 @@ section,
 .about .content .read-more:hover i {
   margin-left: 10px;
 }
-
+  .img-fluid {
+  display: block;
+  margin-left: 0; /* la empuja a la derecha */
+  margin-right: 200;
+  max-width: 800px;
+  width: 800%;
+  margin-top: 50px; 
+}
 /*--------------------------------------------------------------
 # Stats Section
 --------------------------------------------------------------*/
@@ -977,6 +1033,17 @@ section,
   font-size: 16px;
   font-weight: 700;
   color: color-mix(in srgb, var(--default-color), transparent 40%);
+}
+.stats .stats-item {
+  padding: 30px 10px;
+  color: white;
+}
+.stats .stats-item img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+.stats p {
+  font-size: 1.1rem;
 }
 
 /*--------------------------------------------------------------
@@ -1038,11 +1105,18 @@ section,
 --------------------------------------------------------------*/
 .features .features-image {
   position: relative;
-  min-height: 400px;
+  min-height: 600px;
+   margin-right: 0px;
 }
-
+ .features-image col-lg-5 order-lg-2 d-flex align-items-center {
+ margin-right: 0px;
+   
+   
+   
+}
+   
 .features .features-item h4 {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 700;
   margin: 0 0 5px 0;
 }
@@ -1055,9 +1129,41 @@ section,
 }
 
 .features .features-item p {
-  font-size: 15px;
+  font-size: 20px;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   margin: 0;
+}
+.feature-item img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.feature-item h3 {
+  margin-top: 15px;
+  font-size: 3rem;
+}
+.feature-item p {
+  font-style: italic;
+  font-size: 2rem;
+}
+
+.feature-item {
+  text-align: center;
+  color: white;
+  font-family: 'Playfair Display', serif;
+}
+.feature-item h3 {
+  font-size: 34px;
+  margin-top: 20px;
+}
+.feature-item p {
+  font-style: italic;
+  font-size: 22px;
+}
+.features-item img.icono {
+  margin-right: 30px;
+  height: auto;
 }
 
 /*--------------------------------------------------------------
@@ -1846,6 +1952,8 @@ section,
 .starter-section {
   /* Add your styles here */
   
+ 
+  
   .img-about {
   display: block;
   margin-left: 0; /* la empuja a la derecha */
@@ -1854,3 +1962,27 @@ section,
   width: 5000%;
 }
 
+.feature-item {
+  text-align: center;
+  color: white;
+}
+
+.feature-img {
+  width: 20px;            /* ajustá el tamaño a gusto */
+  height: px;
+  border-radius: 50%;      /* esto hace que la imagen sea circular */
+  object-fit: cover;
+  margin-bottom: 15px;
+  box-shadow: 0 0 20px #000;
+}
+.features-image col-lg-5 order-lg-2 d-flex align-items-center {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  margin-right: 0px; 
+}
+
+ .features-image col-lg-5 order-lg-2 d-flex align-items-center 
+   
