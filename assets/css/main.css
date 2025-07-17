@@ -117,7 +117,7 @@ h3 {
 }
 
 h4 {
-  font-size: 40px;
+  font-size: 32px;
 }
 
 h5 {
@@ -127,7 +127,9 @@ h5 {
 h6 {
   font-size: 30px;
 }
-
+p {
+  font-size: 20px;
+  }
   color: var(--heading-color);
   font-family: var(--heading-font);
 }
@@ -763,8 +765,8 @@ background: #1b1540;
 --------------------------------------------------------------*/
 section,
 .section {
-  color: var(--default-color);
-  background-color: var(--background-color);
+  color: #000021;
+  background-color: #000021;
   padding: 60px 0;
   scroll-margin-top: 92px;
   overflow: clip;
@@ -828,13 +830,18 @@ section,
   font-weight: 800;
   color: white;
   text-transform: uppercase;
+   margin-bottom: 0 rem;
+  line-height: 1.1;
 }
 
 .hero h3 {
   font-size: 34px;
   font-weight: 300;
   color: #ccc;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+    line-height: 1;
+
+
 }
 
 .hero p {
@@ -842,7 +849,12 @@ section,
   font-style: italic;
   color: #fff;
   margin-top: -30px;
+    margin-bottom: 15 px;
+   line-height: 1.1;
 }
+
+
+
 
 
 .hero .btn-get-started {
@@ -888,7 +900,7 @@ section,
 }
 
 .hero .animated {
-  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+  animation: up-down 3s ease-in-out infinite alternate-reverse both;
 }
 .hero-img img {
   max-width: 600px;
@@ -898,16 +910,18 @@ section,
 }
 
 
+
 @media (max-width: 640px) {
   .hero h1 {
-    font-size: 28px;
+    font-size: 30px;
     line-height: 36px;
   }
 
   .hero p {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 24px;
     margin-bottom: 30px;
+    margin-top: 16px;
   }
 
   .hero .btn-get-started,
@@ -992,19 +1006,26 @@ section,
   width: 800%;
   margin-top: 50px; 
 }
+
 /*--------------------------------------------------------------
 # Stats Section
 --------------------------------------------------------------*/
 .stats {
-  position: relative;
-  padding: 80px 0;
-  background: url("../img/stats-bg.png") center center no-repeat;
+  position: static;
+  padding: 20px 0;
+  background: #3A0075;
   background-size: cover;
 }
 
 .stats:before {
-  content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 80%);
+ #stats {
+  background: #370068 !important;
+  position: relative;
+  z-index: 1; /* debajo del contenido */
+}
+
+
+   background: #370068;
   position: absolute;
   inset: 0;
   z-index: 2;
@@ -1051,7 +1072,11 @@ section,
   width: 60px;
   height: auto;
   margin-bottom: 10px;
-}
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  
+  }
 
 .stats-item p {
   margin: 0;
@@ -1063,6 +1088,7 @@ section,
   min-height: 100vh;
   display: flex;
   align-items: center;
+
 }
 
 @media (max-width: 992px) {
@@ -1984,10 +2010,35 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
+/* Starter Section */
+
 .starter-section {
   /* Add your styles here */
-  
- 
+}
+.btn-look {
+  display: inline-block;
+  padding: 4px 14px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-style: italic;
+  font-size: 1em;
+  font-family: serif; /* Esto lo hace igual que "Amoladora angular Gws 850" */
+  color: white;
+  background: transparent;
+  text-decoration: none;
+  line-height: normal;
+  white-space: nowrap; /* evita salto de línea */
+  transition: all 0.3s ease;
+}
+
+.btn-look:hover {
+  background-color: white;
+  color: #000428;
+}
+
+ .stats-item h-100  {
+   width: 100px
+      }
   
   .img-about {
   display: block;
@@ -2021,3 +2072,328 @@ section,
 
  .features-image col-lg-5 order-lg-2 d-flex align-items-center 
    
+/* Fondo violeta */
+.custom-background {
+  background-color: #370068;
+  padding: 0px 0;
+}
+
+/* Estilos de cada ítem */
+.stats-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.stats-item img.icono {
+  width: 80px;
+  margin-bottom: 15px;
+}
+
+/* Estilo del texto */
+.stats-item p {
+  font-style: italic;
+  margin: 0;
+  font-size: 1.1rem;
+}
+ .corte-hero {
+   padding: 0px;
+   }
+
+.col-lg-6 d-flex flex-column justify-content-center ps-lg-5 {
+  padding-left: 60px;
+  
+  
+   }
+.sin-esfuerzo-section {
+  background-color: #060027;
+  padding: 80px 0;
+text-align: center;
+}
+
+.sin-esfuerzo-title {
+  font-family: 'Georgia', serif;
+  font-style: italic;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+section {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.sin-esfuerzo-gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.circle-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px; /* 👉 esto separa la imagen del texto */
+}
+
+.circle-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* asegura que la imagen no tenga bordes blancos */
+}
+
+.card p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+/* Flechas */
+.arrow {
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+  user-select: none;
+}
+.discos-section {
+  background-image: url(assets/img/ult/fondo_Mesa); /* reemplazalo por tu imagen */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 20px;
+  position: relative;
+  color: white;
+}
+
+.discos-section h2 {
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+
+.discos-section .italic {
+  font-style: italic;
+}
+
+.disco-img {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.disco-img:hover {
+  transform: scale(1.05);
+}
+
+.discos-section p {
+  font-size: 1.2rem;
+  margin-top: 15px;
+  line-height: 1.3;
+}
+
+/* Flechas */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2.5rem;
+  color: white;
+  cursor: pointer;
+  z-index: 2;
+  transition: transform 0.2s ease;
+}
+
+.arrow:hover {
+  transform: translateY(-50%) scale(1.2);
+}
+
+.arrow-left {
+  left: 10px;
+}
+
+.arrow-right {
+  right: 10px;
+}
+.row.align-items-center {
+    min-height: 15vh;
+    display: flex;
+    align-items: center;
+}
+.mb-5 {
+    margin-bottom: 5rem !important;
+  }
+
+.features-item d-flex align-items-start mb-4 {
+  margin-left: 200px;
+  }
+.amoladora-item {
+  display: flex;
+  align-items: center; /* ✅ centra verticalmente el ícono con el texto */
+  margin-bottom: 30px;
+}
+
+.btn-mira {
+  display: inline-block;
+  padding: 15px 25px;
+  border: 1px solid white;
+  color: white;
+  font-size: 1.2em;
+
+  border-radius: 30px;
+  text-decoration: none;
+  text-align: center;       /* ✅ centra horizontalmente */
+  line-height: 1.5;          /* ✅ ajusta la altura del texto */
+  transition: all 0.3s ease;
+}
+
+.btn-mira:hover {
+  background-color: white;
+  color: black;
+}
+/* ✅ Agrega este bloque al final de tu <style> o dentro de tu main.css para adaptar el sitio a mobile */
+
+
+@media (max-width: 768px) { 
+  #hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+    height: auto;
+  }
+
+  #hero .container {
+    padding-top: 80px;
+  }
+
+  #hero h1 {
+    font-size: 4rem;
+  }
+
+  #hero h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  #hero p {
+    font-size: 3rem;
+    margin-bottom: 30px;
+  }
+
+  .btn-mira {
+    font-size: 1.1rem;
+    padding: px 20px;
+    border-radius: 30px;
+    border: 1px solid white;
+    display: inline-block;
+    margin: 0px;
+  }
+
+  .hero-img img {
+    width: 100%;
+    max-width: 320px;
+    margin: 20px auto 0;
+  }
+}
+@media (max-width: 768px) {
+  #stats .row {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  #stats .col-lg-4 {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 5px;
+  }
+
+  .stats-item img.icono {
+    width: 50px;
+    height: auto;
+  }
+
+  .stats-item p {
+    font-size: 14px;
+    margin-top: 8px;
+  }
+}
+
+  @media (max-width: 768px) {
+    #amoladora-info {
+      padding: 5px 5px;
+      text-align: center;
+    }
+
+    .amoladora-item {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .amoladora-icon {
+      width: 50px;
+      margin: 0 0 10px 0;
+    }
+
+    .amoladora-img {
+      max-width: 70%;
+      margin-top: 30px;
+    }
+
+    .col-lg-6.text-end {
+      text-align: center !important;
+    }
+
+    .amoladora-item h4 {
+      font-size: 22px;
+    }
+
+    .amoladora-item p {
+      font-size: 16px;
+}
+  .disco-img {
+    width: 220px;
+    height: auto;
+  }
+
+  @media (max-width: 768px) {
+    .disco-img {
+      width: 180px;
+    }
+
+    #tecno h2 {
+      font-size: 1.8rem;
+    }
+  
+
+  @media (max-width: 768px) {
+    #aboutCarousel {
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+
+    .carousel-inner {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    .carousel-item {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
