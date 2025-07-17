@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ... (todo tu head permanece igual) ... -->
+</head>
+
+<style>
+  #hero {
+    background-image: url('assets/img/fondo-hero.jpg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  #hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 10, 40, 0.7);
+    z-index: -1;
+  }
+</style>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <h1 class="sitename">BOSCH</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Inicio</a></li>
+          <li><a href="#about">Despiece</a></li>
+          <li><a href="#producto">Producto</a></li>
+          <li><a href="#portfolio">Características</a></li>
+          <li><a href="#team">Tecnología</a></li>
+          <li><a href="#discos">Discos</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section accent-background">
+      <!-- ...contenido hero... -->
+    </section>
+
+    <!-- Despiece Section (about) -->
+    <section id="about" class="about section">
+      <!-- ...contenido... -->
+    </section>
+
+    <!-- Producto Section -->
+    <section id="producto" class="section">
+      <!-- ...contenido de la sección producto (antes id="services")... -->
+    </section>
+
+    <!-- Características Section -->
+    <section id="portfolio" class="features section">
+      <!-- ...contenido de características... -->
+    </section>
+
+    <!-- Tecnología Section -->
+    <section id="team" class="section">
+      <!-- ...contenido de tecnología (agregar contenido si no hay)... -->
+    </section>
+
+    <!-- Discos Section -->
+    <section id="discos" class="discos-section">
+      <!-- ...contenido de discos... -->
+    </section>
+
+  </main>
+
+  <!-- Footer y scripts permanecen igual -->
+
+</body>
+</html>
